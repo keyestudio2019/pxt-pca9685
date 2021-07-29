@@ -347,7 +347,7 @@ namespace PCA9685 {
         ledNum = Math.max(1, Math.min(16, ledNum))
         dutyCycle = Math.max(0, Math.min(100, dutyCycle))
         const pwm = (dutyCycle * (chipResolution - 1)) / 100
-        debug(`setLedDutyCycle(${ledNum}, ${dutyCycle}, ${chipAddress})`)
+        debug(`setledDutyCycle(${ledNum}, ${dutyCycle}, ${chipAddress})`)
         return setPinPulseRange(ledNum - 1, 0, pwm, chipAddress)
     }
 
